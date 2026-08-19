@@ -1,0 +1,103 @@
+/* ============================================================
+   Hamish Lacmane — personal portfolio, top of the Hamilin family
+   tree (Lacmane -> Hub -> Cards/Star/Guide). Colour scheme is
+   deliberately undecided for now — plain black/white/grey only,
+   same "explicit neutral placeholder, not a real choice" pattern
+   already used on Hamilin Star. Don't treat these as final brand
+   colours.
+   ============================================================ */
+
+:root {
+  --paper: #FFFFFF;
+  --ink: #191919;
+  --ink-soft: #666666;
+  --ink-muted: #ADADAD;
+  --hairline: rgba(0,0,0,0.12);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 32rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.name {
+  font-family: "Bahnschrift", "DIN Alternate", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-variation-settings: "wght" 700, "wdth" 85;
+  font-size: clamp(2.2rem, 7vw, 3.4rem);
+  letter-spacing: 0.01em;
+  margin: 0 0 1.75rem;
+  line-height: 1.1;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+.social-icons a {
+  color: var(--ink-soft);
+  display: inline-flex;
+}
+.social-icons a:hover, .social-icons a:focus-visible { color: var(--ink); }
+.social-icons svg { width: 40px; height: 40px; }
+
+.section-label {
+  font-family: Consolas, "Cascadia Code", "SF Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin: 0 0 0.6rem;
+}
+
+.family-links, .other-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-family: Consolas, "Cascadia Code", "SF Mono", ui-monospace, monospace;
+  font-size: 0.85rem;
+}
+.other-links { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--hairline); }
+.family-links a, .other-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 0.1rem;
+}
+.family-links a:hover, .family-links a:focus-visible,
+.other-links a:hover, .other-links a:focus-visible { color: var(--ink-soft); border-color: var(--ink-soft); }
+.family-links svg, .other-links svg { width: 16px; height: 16px; flex-shrink: 0; }
+.link-emoji { font-size: 0.95rem; line-height: 1; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
