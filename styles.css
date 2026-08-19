@@ -89,6 +89,15 @@ body {
 .other-links a:hover, .other-links a:focus-visible { color: var(--ink-soft); border-color: var(--ink-soft); }
 .family-links svg, .other-links svg { width: 16px; height: 16px; flex-shrink: 0; }
 .link-emoji { font-size: 0.95rem; line-height: 1; }
+.family-link-soon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: var(--ink-muted);
+  padding-bottom: 0.1rem;
+}
+.family-link-soon svg { width: 16px; height: 16px; flex-shrink: 0; }
 
 .sr-only {
   position: absolute;
