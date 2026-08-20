@@ -20,11 +20,17 @@ Content, top to bottom:
 
 **Favicon**: "HL" monogram, same inline-SVG-`data:`-URI technique as Star's ⭐ and Guide's 📕 (dark rounded-square background, white bold initials) — chosen because this page is literally just the name, so initials fit better than a topic emoji. Easy to swap later if Hamish wants something else.
 
+## SEO — done 2026-08-19/20
+
+Meta description, OG + Twitter Card tags, canonical link, `robots.txt`/`sitemap.xml` at the repo root — same pass already done on Star/Guide. Canonical domain is `https://hamishlacmane.com/` — **not connected yet**, Hamish still needs to point the domain at GitHub Pages (same Cloudflare/Spaceship recipe used for every other Hamilin domain, see [[project_hamilin_sites]]). No separate visually-hidden `<h1>` needed here unlike Star/Guide — the visible "Hamish Lacmane" heading already *is* a real `<h1>`.
+
+**Favicon confirmed 2026-08-19**: the "HL" monogram is the real choice, not just a placeholder default — don't revisit without being asked.
+
 ## Still to do
 
 - **Holographic card idea** — Hamish wants some kind of holographic card element on the page eventually. Raised 2026-08-19 as a "for the todo" idea, not specced or built. Ask for details (what it displays, where it sits) before attempting.
 - Colour scheme — undecided, see above.
-- No favicon confirmation from Hamish yet on the "HL" monogram choice — built as a reasonable default, flag if he wants something else.
+- Domain (`hamishlacmane.com`) not connected to GitHub Pages yet.
 
 ## Git workflow
 
