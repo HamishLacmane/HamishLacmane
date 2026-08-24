@@ -15,14 +15,16 @@ Deliberately minimal: name big and centered (Bahnschrift display font, matching 
 Content, top to bottom:
 - **Name**: "Hamish Lacmane", `<h1>`.
 - **Social icons**: LinkedIn (`linkedin.com/in/hamish-lacmane-7b080b107`) and GitHub (`github.com/HamishLacmane`), inline Tabler Icons SVG (MIT licensed, no CDN — same technique as Guide's restaurant icons), 40px.
-- **"Personal Projects" section** (small uppercase label, `.section-label`): The Third Wheel FM (`thethirdwheel.netlify.app`, `microphone-2` Tabler icon), Hamilin Hub (`sitemap` Tabler icon — Hub has no real favicon yet, this was tested live against `building-airport` and `cube-unfolded` before Hamish picked `sitemap`), Hamilin Star (⭐ prefix — same emoji as Star's own favicon), Hamilin Guide (📕 prefix — same emoji as Guide's own favicon), Hamilin Cards (greyed "· coming soon" placeholder, `play-card-1` icon — no live site yet, matches the family's established unbuilt-section pattern, e.g. Guide's "Hotels"/"Travel guides" pills). All real links open in a new tab.
+- **"Personal Projects" section** (small uppercase label, `.section-label`), in this order: Hamilin Hub (`sitemap` Tabler icon — Hub has no real favicon yet, this was tested live against `building-airport` and `cube-unfolded` before Hamish picked `sitemap`), Hamilin Star (⭐ prefix — same emoji as Star's own favicon), Hamilin Guide (📕 prefix — same emoji as Guide's own favicon), Hamilin Cards (greyed "· coming soon" placeholder, `play-card-1` icon — no live site yet, matches the family's established unbuilt-section pattern, e.g. Guide's "Hotels"/"Travel guides" pills), then **The Third Wheel FM** last (`thethirdwheel.netlify.app`, `microphone-2` Tabler icon, labelled "(deprecated)" — moved to the end and marked 2026-08-19 per Hamish, active Hamilin family links stay grouped first). All real links open in a new tab.
 - **Separate block below a hairline divider**: "My Squash Level" (`app.squashlevels.com/player_detail?player=534743`, ping-pong icon) — not a "project", kept visually distinct.
 
 **Favicon**: "HL" monogram, same inline-SVG-`data:`-URI technique as Star's ⭐ and Guide's 📕 (dark rounded-square background, white bold initials) — chosen because this page is literally just the name, so initials fit better than a topic emoji. Easy to swap later if Hamish wants something else.
 
 ## SEO — done 2026-08-19/20
 
-Meta description, OG + Twitter Card tags, canonical link, `robots.txt`/`sitemap.xml` at the repo root — same pass already done on Star/Guide. Canonical domain is `https://hamishlacmane.com/` — **not connected yet**, Hamish still needs to point the domain at GitHub Pages (same Cloudflare/Spaceship recipe used for every other Hamilin domain, see [[project_hamilin_sites]]). No separate visually-hidden `<h1>` needed here unlike Star/Guide — the visible "Hamish Lacmane" heading already *is* a real `<h1>`.
+Meta description, OG + Twitter Card tags, canonical link, `robots.txt`/`sitemap.xml` at the repo root — same pass already done on Star/Guide. Canonical domain is `https://hamishlacmane.com/`. No separate visually-hidden `<h1>` needed here unlike Star/Guide — the visible "Hamish Lacmane" heading already *is* a real `<h1>`.
+
+**Domains connected and verified 2026-08-21**: `hamishlacmane.com` (real GitHub Pages site) + `hamishlacmane.co.uk`/`hlacmane.com`/`hlacmane.co.uk` (all redirect to `.com`) — same Cloudflare/Spaceship recipe as every other Hamilin domain, see [[project_hamilin_sites]]. All four verified live via `curl`/`nslookup`.
 
 **Favicon confirmed 2026-08-19**: the "HL" monogram is the real choice, not just a placeholder default — don't revisit without being asked.
 
@@ -30,7 +32,6 @@ Meta description, OG + Twitter Card tags, canonical link, `robots.txt`/`sitemap.
 
 - **Holographic card idea** — Hamish wants some kind of holographic card element on the page eventually. Raised 2026-08-19 as a "for the todo" idea, not specced or built. Ask for details (what it displays, where it sits) before attempting.
 - Colour scheme — undecided, see above.
-- Domain (`hamishlacmane.com`) not connected to GitHub Pages yet.
 
 ## Git workflow
 
