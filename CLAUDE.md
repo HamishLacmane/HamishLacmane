@@ -35,4 +35,14 @@ Meta description, OG + Twitter Card tags, canonical link, `robots.txt`/`sitemap.
 
 ## Git workflow
 
+**Before any push: do the "Pre-push visual check" in `AGENTS.md`** (every page at phone, tablet, laptop and desktop sizes; no horizontal scroll, no console errors, text and nav wrap sensibly, screenshots looked at). Do not push if it fails.
+
 Local commit email set to `16271451+HamishLacmane@users.noreply.github.com` (not `--global`) — see [[user_github_noreply_email]] memory, same as every other Hamilin repo; pushing with the real email gets a GH007 rejection since Hamish has "block command line pushes that expose my email" enabled. No LICENSE file by design (all rights reserved). No `Co-Authored-By: Claude` trailer on commits, matching every other Hamilin repo. `gh` CLI not installed — push the feature branch and hand Hamish the GitHub "create PR" URL GitHub prints on push.
+
+## Project log
+
+`PROJECT_LOG.md` in this folder is an **append-only** record of key changes and things Hamish has requested (format: `- YYYY-MM-DD — [change|request|decision|bug|todo] text`, newest at the bottom).
+
+**It MUST stay append-only. Hamish's explicit, standing rule:** only ever add new lines at the bottom (e.g. `>>`). Never rewrite, reorder, reflow, summarise, de-duplicate, "tidy" or delete existing lines — not even to fix a typo or a wrong fact; add a new line that says what was wrong instead. When rewriting the file with a whole-file edit would be easier, don't: append.
+
+Add a line after any key change or request, in the repo the change lives in (data batches go in `hamilin-star-db/PROJECT_LOG.md`). **No `Co-Authored-By: Claude` trailer on commits here** — Hamish's standing rule.
